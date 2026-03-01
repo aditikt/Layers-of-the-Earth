@@ -1,11 +1,12 @@
 [gd_scene format=3 uid="uid://brwy8xqalov07"]
 
 [ext_resource type="Script" uid="uid://dfwb1ofgcpqd7" path="res://Start Game/main.gd" id="1_0hu2p"]
-[ext_resource type="Texture2D" uid="uid://cea6r4t0lmecj" path="res://Assests/sandbox_result_i-removebg-preview 4.png" id="1_ee42a"]
 [ext_resource type="Script" uid="uid://dk4kj0xgh511w" path="res://Start Game/player.gd" id="1_mh5nq"]
 [ext_resource type="Texture2D" uid="uid://c5tsrehhd5o35" path="res://Assests/sandbox_result_i-removebg-preview 2.png" id="2_u67w6"]
+[ext_resource type="Texture2D" uid="uid://c2phmdahk5ry5" path="res://images/IMG_5781.jpeg" id="2_x6k5n"]
 [ext_resource type="Texture2D" uid="uid://dhvtm0uf4y5kk" path="res://Screenshot 2026-02-28 102032.png" id="3_u67w6"]
 [ext_resource type="FontFile" uid="uid://brw84kef06m5d" path="res://Assests/PixelifySans-VariableFont_wght.ttf" id="6_x6k5n"]
+[ext_resource type="Texture2D" uid="uid://ifxpek5ekrgk" path="res://images/78808.png" id="7_x6k5n"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ee42a"]
 size = Vector2(145.125, 415)
@@ -240,10 +241,10 @@ sources/0 = SubResource("TileSetAtlasSource_irx2a")
 [node name="Main" type="Node2D" unique_id=541736151]
 script = ExtResource("1_0hu2p")
 
-[node name="SandboxResultIRemovebgPreview4" type="Sprite2D" parent="." unique_id=1637910238]
-position = Vector2(661, -27)
-scale = Vector2(4.807626, 5.2211313)
-texture = ExtResource("1_ee42a")
+[node name="Img5781" type="Sprite2D" parent="." unique_id=755437009]
+position = Vector2(576.5, 320.5)
+scale = Vector2(0.79652774, 0.70162165)
+texture = ExtResource("2_x6k5n")
 
 [node name="player" type="CharacterBody2D" parent="." unique_id=414437583]
 visible = false
@@ -262,13 +263,35 @@ shape = SubResource("RectangleShape2D_ee42a")
 scale = Vector2(3, 3)
 tile_set = SubResource("TileSet_irx2a")
 
-[node name="Button2" type="Button" parent="." unique_id=2064736665]
-offset_left = 590.0
-offset_top = 468.0
-offset_right = 1013.0
-offset_bottom = 572.0
+[node name="SandboxResultIRemovebgPreview2" type="Sprite2D" parent="." unique_id=1468362759]
+position = Vector2(266, 203.81253)
+scale = Vector2(1.7954941, 1.94082)
+texture = ExtResource("2_u67w6")
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=55060106]
+position = Vector2(345.8839, 300.6875)
+scale = Vector2(0.01136907, 0.0178571)
+texture = ExtResource("7_x6k5n")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=650404652]
+position = Vector2(253, 300.6875)
+scale = Vector2(0.009444433, 0.015624974)
+texture = ExtResource("7_x6k5n")
+
+[node name="Button2" type="Button" parent="." unique_id=236247912]
+z_index = 1
+anchors_preset = -1
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 638.0
+offset_top = 446.0
+offset_right = 1022.0
+offset_bottom = 560.0
+grow_horizontal = 2
+grow_vertical = 2
 theme_override_fonts/font = ExtResource("6_x6k5n")
-theme_override_font_sizes/font_size = 72
+theme_override_font_sizes/font_size = 55
 text = "Click to Play"
 
 [node name="Button" type="Button" parent="." unique_id=738164892]
@@ -280,10 +303,5 @@ theme_override_fonts/font = ExtResource("6_x6k5n")
 theme_override_font_sizes/font_size = 72
 text = "Layers of 
 the Earth"
-
-[node name="SandboxResultIRemovebgPreview2" type="Sprite2D" parent="." unique_id=1468362759]
-position = Vector2(265, 204.00002)
-scale = Vector2(1.7920278, 1.9416859)
-texture = ExtResource("2_u67w6")
 
 [connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
