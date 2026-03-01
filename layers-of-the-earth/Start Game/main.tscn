@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://c5tsrehhd5o35" path="res://Assests/sandbox_result_i-removebg-preview 2.png" id="2_u67w6"]
 [ext_resource type="Texture2D" uid="uid://c2phmdahk5ry5" path="res://images/IMG_5781.jpeg" id="2_x6k5n"]
 [ext_resource type="Texture2D" uid="uid://dhvtm0uf4y5kk" path="res://Screenshot 2026-02-28 102032.png" id="3_u67w6"]
+[ext_resource type="FontFile" uid="uid://brw84kef06m5d" path="res://Assests/PixelifySans-VariableFont_wght.ttf" id="6_0hu2p"]
 [ext_resource type="Texture2D" uid="uid://ifxpek5ekrgk" path="res://images/78808.png" id="7_x6k5n"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_irx2a"]
@@ -261,10 +262,30 @@ scale = Vector2(0.009444433, 0.015624974)
 texture = ExtResource("7_x6k5n")
 
 [node name="Button" type="Button" parent="." unique_id=354943099]
-offset_left = 722.0
-offset_top = 448.0
-offset_right = 795.0
-offset_bottom = 479.0
-text = "Click me"
+offset_left = 577.0
+offset_top = 401.0
+offset_right = 899.0
+offset_bottom = 494.0
+theme_override_fonts/font = ExtResource("6_0hu2p")
+theme_override_font_sizes/font_size = 50
+text = "Click to Play"
+
+[node name="Label" type="Label" parent="." unique_id=1697938934]
+offset_left = 238.0
+offset_top = 89.0
+offset_right = 886.0
+offset_bottom = 342.0
+
+[node name="Label" type="Label" parent="Label" unique_id=1697610979]
+layout_mode = 0
+offset_left = 283.0
+offset_top = 82.0
+offset_right = 1046.0
+offset_bottom = 291.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("6_0hu2p")
+theme_override_font_sizes/font_size = 85
+text = "Layers of
+the Earth"
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
