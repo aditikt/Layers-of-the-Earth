@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://bldkvpwa3m8vw"]
+
+[ext_resource type="Script" uid="uid://b6bsxkxc87nhq" path="res://description.gd" id="1_5ey5q"]
+[ext_resource type="Texture2D" uid="uid://6vffddghsad" path="res://Assests/unnamed.jpg" id="1_jk0mq"]
+[ext_resource type="FontFile" uid="uid://brw84kef06m5d" path="res://Assests/PixelifySans-VariableFont_wght.ttf" id="2_5ey5q"]
+
+[node name="Node2D" type="Node2D" unique_id=1770875310]
+script = ExtResource("1_5ey5q")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1877358631]
+position = Vector2(573.75, 327.49997)
+scale = Vector2(0.78551817, 0.55432934)
+texture = ExtResource("1_jk0mq")
+
+[node name="Label" type="Label" parent="." unique_id=604342536]
+offset_left = 111.0
+offset_top = 79.0
+offset_right = 1093.0
+offset_bottom = 604.0
+theme_override_colors/font_color = Color(0, 0.49616575, 0.12527522, 1)
+theme_override_colors/font_shadow_color = Color(0.029506547, 0.029506572, 0.029506484, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_5ey5q")
+theme_override_font_sizes/font_size = 32
+text = "A brilliant and daring scientist has one mission to travel to the center of Earth to uncover secrets no human has ever seen. The player guides the expedition downward through
+ each layer of the planet, the crust, mantle, outer core, and inner core. But deep in the swirling metal of the outer core, a powerful being has
+ formed: Cordaemonium, the Core Demon. To reach the center and complete the discovery, players must understand how Earth’s layers work and dodge the Cordaemonium. "
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="Button" type="Button" parent="." unique_id=1038576344]
+offset_left = 404.0
+offset_top = 514.0
+offset_right = 761.0
+offset_bottom = 582.0
+theme_override_fonts/font = ExtResource("2_5ey5q")
+theme_override_font_sizes/font_size = 33
+text = "Start game"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

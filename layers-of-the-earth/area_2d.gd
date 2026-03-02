@@ -1,4 +1,9 @@
 extends Area2D
 
-func _on_body_entered(_body):
-	get_tree().call_deferred("change_scene_to_file", "res://level2.tscn")
+@export var next_scene: String = "res://Crust Quiz.tscn"
+
+
+func _on_body_entered(body):
+	print("Something entered: ", body,name)
+	if body.is_in_group("player"):
+		get_tree().call_deferred("change_scene_to_file", next_scene)

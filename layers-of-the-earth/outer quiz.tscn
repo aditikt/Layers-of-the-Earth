@@ -1,0 +1,114 @@
+[gd_scene format=3 uid="uid://dw4klx1qcpxd0"]
+
+[ext_resource type="Script" uid="uid://c0ge7b8g421yl" path="res://outercore_quiz.gd" id="1_88ud5"]
+[ext_resource type="Texture2D" uid="uid://durg1bjyu2fkb" path="res://images/IMG_5779.jpeg" id="2_yqh87"]
+[ext_resource type="FontFile" uid="uid://brw84kef06m5d" path="res://Assests/PixelifySans-VariableFont_wght.ttf" id="3_1b8r6"]
+
+[node name="Node2D" type="Node2D" unique_id=445008847]
+script = ExtResource("1_88ud5")
+
+[node name="Img5779" type="Sprite2D" parent="." unique_id=979490302]
+position = Vector2(574, 323.75)
+scale = Vector2(1.1975052, 1.0581014)
+texture = ExtResource("2_yqh87")
+
+[node name="Label" type="Label" parent="Img5779" unique_id=740925932]
+offset_left = -207.93228
+offset_top = -236.03596
+offset_right = 748.06775
+offset_bottom = -133.03596
+theme_override_fonts/font = ExtResource("3_1b8r6")
+theme_override_font_sizes/font_size = 41
+text = "The core is mostly
+ made of iron and ___."
+metadata/_edit_use_anchors_ = true
+
+[node name="Button3" type="Button" parent="." unique_id=236333967]
+anchors_preset = -1
+anchor_left = -0.22199972
+anchor_top = -0.050505072
+anchor_right = -0.22199972
+anchor_bottom = -0.050505072
+offset_left = 752.0
+offset_top = 456.0
+offset_right = 1028.0
+offset_bottom = 534.0
+text = "Silica"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label1" type="Label" parent="Button3" unique_id=1538718820]
+visible = false
+layout_mode = 0
+offset_left = -272.99997
+offset_top = -103.0
+offset_right = -36.99997
+offset_bottom = -64.0
+theme_override_fonts/font = ExtResource("3_1b8r6")
+theme_override_font_sizes/font_size = 28
+text = "Wrong! Try again."
+
+[node name="Button1" type="Button" parent="." unique_id=506571725]
+anchors_preset = -1
+anchor_left = -0.22199976
+anchor_top = -0.044788312
+anchor_right = -0.22199976
+anchor_bottom = -0.044788312
+offset_left = 107.0
+offset_top = 442.0
+offset_right = 383.0
+offset_bottom = 520.0
+text = "Copper"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label3" type="Label" parent="Button1" unique_id=1973979890]
+visible = false
+layout_mode = 0
+offset_left = 372.0
+offset_top = -90.0
+offset_right = 608.00006
+offset_bottom = -50.999992
+theme_override_fonts/font = ExtResource("3_1b8r6")
+theme_override_font_sizes/font_size = 28
+text = "Wrong! Try again."
+
+[node name="Button2" type="Button" parent="." unique_id=1332532423]
+anchors_preset = -1
+anchor_left = -0.23074104
+anchor_top = -0.041847102
+anchor_right = -0.23074104
+anchor_bottom = -0.041847102
+offset_left = 755.0
+offset_top = 233.0
+offset_right = 1031.0
+offset_bottom = 311.00003
+text = "Magnesium"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label2" type="Label" parent="Button2" unique_id=252580118]
+visible = false
+layout_mode = 0
+offset_left = -275.0
+offset_top = 117.99999
+offset_right = -39.0
+offset_bottom = 157.0
+theme_override_fonts/font = ExtResource("3_1b8r6")
+theme_override_font_sizes/font_size = 28
+text = "Wrong! Try again."
+
+[node name="Button4" type="Button" parent="." unique_id=620698542]
+anchors_preset = -1
+anchor_left = -0.21850327
+anchor_top = -0.05050514
+anchor_right = -0.21850327
+anchor_bottom = -0.05050514
+offset_left = 105.0
+offset_top = 237.0
+offset_right = 381.0
+offset_bottom = 315.00003
+text = "Nickel"
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]
+[connection signal="pressed" from="Button1" to="." method="_on_button_1_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Button4" to="." method="_on_button_4_pressed"]

@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://bv50bcaws6jap"]
+
+[ext_resource type="Texture2D" uid="uid://6vffddghsad" path="res://Assests/unnamed.jpg" id="1_se5xy"]
+[ext_resource type="FontFile" uid="uid://brw84kef06m5d" path="res://Assests/PixelifySans-VariableFont_wght.ttf" id="2_xfp72"]
+[ext_resource type="Texture2D" uid="uid://c5tsrehhd5o35" path="res://Assests/sandbox_result_i-removebg-preview 2.png" id="3_ggktp"]
+
+[node name="Node2D" type="Node2D" unique_id=662889355]
+
+[node name="Unnamed" type="Sprite2D" parent="." unique_id=54097446]
+position = Vector2(565.99994, 333)
+scale = Vector2(0.79066575, 0.64601016)
+texture = ExtResource("1_se5xy")
+
+[node name="Label" type="Label" parent="." unique_id=762980409]
+offset_left = 246.0
+offset_top = 94.0
+offset_right = 916.0
+offset_bottom = 214.0
+theme_override_fonts/font = ExtResource("2_xfp72")
+theme_override_font_sizes/font_size = 100
+text = "Yay! You did it!"
+
+[node name="SandboxResultIRemovebgPreview2" type="Sprite2D" parent="." unique_id=531176790]
+position = Vector2(550, 291)
+scale = Vector2(1.6728771, 1.5178984)
+texture = ExtResource("3_ggktp")

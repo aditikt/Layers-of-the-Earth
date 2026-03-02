@@ -1,0 +1,95 @@
+[gd_scene format=3 uid="uid://c62yhc1o6l4a3"]
+
+[ext_resource type="Script" uid="uid://dxu22k8fme4fy" path="res://crust_quiz.gd" id="1_20cwf"]
+[ext_resource type="Texture2D" uid="uid://xsvkwlocb2ge" path="res://Assests/IMG_5767.jpeg" id="1_i04fn"]
+[ext_resource type="FontFile" uid="uid://brw84kef06m5d" path="res://Assests/PixelifySans-VariableFont_wght.ttf" id="3_cdug6"]
+[ext_resource type="Script" uid="uid://c8qi0wdesssrr" path="res://button_4.gd" id="4_cdug6"]
+
+[node name="Node2D" type="Node2D" unique_id=330467855]
+script = ExtResource("1_20cwf")
+
+[node name="Img5767" type="Sprite2D" parent="." unique_id=396735791]
+position = Vector2(577, 392)
+scale = Vector2(1.07342, 1.0460526)
+texture = ExtResource("1_i04fn")
+
+[node name="Label" type="Label" parent="Img5767" unique_id=1321150798]
+offset_left = -462.07446
+offset_top = -125.23272
+offset_right = 465.92554
+offset_bottom = -56.40255
+theme_override_fonts/font = ExtResource("3_cdug6")
+theme_override_font_sizes/font_size = 36
+text = "The crust makes up ___ percent of the earth's volume."
+metadata/_edit_use_anchors_ = true
+
+[node name="Button3" type="Button" parent="." unique_id=14210405]
+offset_left = 750.0
+offset_top = 501.0
+offset_right = 1026.0
+offset_bottom = 579.0
+text = "20%"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label1" type="Label" parent="Button3" unique_id=547076745]
+visible = false
+layout_mode = 0
+offset_left = -266.0
+offset_top = -82.0
+offset_right = -30.0
+offset_bottom = -43.0
+theme_override_fonts/font = ExtResource("3_cdug6")
+theme_override_font_sizes/font_size = 28
+text = "Wrong! Try again."
+
+[node name="Button2" type="Button" parent="." unique_id=1793503963]
+offset_left = 186.0
+offset_top = 500.0
+offset_right = 462.0
+offset_bottom = 578.0
+text = "10%"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label2" type="Label" parent="Button2" unique_id=516045876]
+visible = false
+layout_mode = 0
+offset_left = 298.0
+offset_top = -81.0
+offset_right = 534.0
+offset_bottom = -42.0
+theme_override_fonts/font = ExtResource("3_cdug6")
+theme_override_font_sizes/font_size = 28
+text = "Wrong! Try again."
+
+[node name="Button4" type="Button" parent="." unique_id=545125478]
+offset_left = 745.0
+offset_top = 341.0
+offset_right = 1021.0
+offset_bottom = 419.0
+text = "1%"
+script = ExtResource("4_cdug6")
+metadata/_edit_use_anchors_ = true
+
+[node name="Button" type="Button" parent="." unique_id=1357916467]
+offset_left = 181.0
+offset_top = 340.0
+offset_right = 457.0
+offset_bottom = 418.0
+text = "5%"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label3" type="Label" parent="Button" unique_id=605867167]
+visible = false
+layout_mode = 0
+offset_left = 303.0
+offset_top = 79.0
+offset_right = 539.0
+offset_bottom = 118.0
+theme_override_fonts/font = ExtResource("3_cdug6")
+theme_override_font_sizes/font_size = 28
+text = "Wrong! Try again."
+
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Button4" to="." method="_on_button_4_pressed"]
+[connection signal="pressed" from="Button" to="." method="_on_button3_pressed"]

@@ -1,3 +1,106 @@
-[gd_scene format=3 uid="uid://qfjfbskltc40"]
+[gd_scene format=3 uid="uid://b1d481q54wt7f"]
 
-[node name="Node2D" type="Node2D" unique_id=1909130763]
+[ext_resource type="Script" uid="uid://bpmejdn1gwefv" path="res://mantle quiz.gd" id="1_hq3ad"]
+[ext_resource type="Texture2D" uid="uid://dmpcsl8w5kwpu" path="res://images/IMG_5778 (7).jpeg" id="2_dktf7"]
+[ext_resource type="FontFile" uid="uid://brw84kef06m5d" path="res://Assests/PixelifySans-VariableFont_wght.ttf" id="2_wcnex"]
+
+[node name="Mantle" type="Node2D" unique_id=142746483]
+script = ExtResource("1_hq3ad")
+
+[node name="Img5778(7)" type="Sprite2D" parent="." unique_id=912746996]
+position = Vector2(575, 341.5)
+scale = Vector2(1.6774193, 1.5000001)
+texture = ExtResource("2_dktf7")
+
+[node name="Label" type="Label" parent="Img5778(7)" unique_id=2015325754]
+offset_left = -284.3654
+offset_top = -169.44716
+offset_right = 671.63464
+offset_bottom = -80.44716
+theme_override_fonts/font = ExtResource("2_wcnex")
+theme_override_font_sizes/font_size = 35
+text = "What does the mantle slowly
+ do that forms Earth's plates? ___"
+metadata/_edit_use_anchors_ = true
+
+[node name="Button3" type="Button" parent="." unique_id=2016594326]
+anchors_preset = -1
+anchor_right = -0.22199972
+anchor_bottom = -0.050505072
+offset_left = 834.0
+offset_top = 498.0
+offset_right = 1110.0
+offset_bottom = 576.0
+text = "Bends"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label1" type="Label" parent="Button3" unique_id=1674992775]
+visible = false
+layout_mode = 0
+offset_left = -331.00003
+offset_top = -123.0
+offset_right = -95.00003
+offset_bottom = -84.0
+theme_override_fonts/font = ExtResource("2_wcnex")
+theme_override_font_sizes/font_size = 28
+text = "Wrong! Try again."
+
+[node name="Button1" type="Button" parent="." unique_id=1222554393]
+anchors_preset = -1
+anchor_right = -0.22199976
+anchor_bottom = -0.044788312
+offset_left = 127.0
+offset_top = 501.0
+offset_right = 403.0
+offset_bottom = 579.0
+text = "Flows"
+metadata/_edit_use_anchors_ = true
+
+[node name="Button2" type="Button" parent="." unique_id=1402957299]
+anchors_preset = -1
+anchor_right = -0.23074104
+anchor_bottom = -0.041847102
+offset_left = 837.0
+offset_top = 282.0
+offset_right = 1113.0
+offset_bottom = 360.00003
+text = "Breaks"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label2" type="Label" parent="Button2" unique_id=2115507800]
+visible = false
+layout_mode = 0
+offset_left = -334.0
+offset_top = 95.99999
+offset_right = -98.0
+offset_bottom = 135.0
+theme_override_fonts/font = ExtResource("2_wcnex")
+theme_override_font_sizes/font_size = 28
+text = "Wrong! Try again."
+
+[node name="Button4" type="Button" parent="." unique_id=1110074248]
+anchors_preset = -1
+anchor_right = -0.21850327
+anchor_bottom = -0.05050514
+offset_left = 122.00003
+offset_top = 276.0
+offset_right = 398.00003
+offset_bottom = 354.00003
+text = "Stretches"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label3" type="Label" parent="Button4" unique_id=402058076]
+visible = false
+layout_mode = 0
+offset_left = 379.99997
+offset_top = 100.99999
+offset_right = 616.0
+offset_bottom = 140.0
+theme_override_fonts/font = ExtResource("2_wcnex")
+theme_override_font_sizes/font_size = 28
+text = "Wrong! Try again."
+
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]
+[connection signal="pressed" from="Button1" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_4_pressed"]
+[connection signal="pressed" from="Button4" to="." method="_on_button_pressed"]

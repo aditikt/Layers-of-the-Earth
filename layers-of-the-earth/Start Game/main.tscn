@@ -270,18 +270,11 @@ theme_override_fonts/font = ExtResource("6_0hu2p")
 theme_override_font_sizes/font_size = 50
 text = "Click to Play"
 
-[node name="Label" type="Label" parent="." unique_id=1697938934]
-offset_left = 238.0
-offset_top = 89.0
-offset_right = 886.0
-offset_bottom = 342.0
-
-[node name="Label" type="Label" parent="Label" unique_id=1697610979]
-layout_mode = 0
-offset_left = 283.0
-offset_top = 82.0
-offset_right = 1046.0
-offset_bottom = 291.0
+[node name="Label2" type="Label" parent="." unique_id=1697610979]
+offset_left = 521.0
+offset_top = 171.0
+offset_right = 1284.0
+offset_bottom = 380.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("6_0hu2p")
 theme_override_font_sizes/font_size = 85

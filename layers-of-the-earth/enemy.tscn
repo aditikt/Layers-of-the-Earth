@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://y37gllb3tgwl"]
+
+[ext_resource type="Script" uid="uid://bw0sa5fe66vsk" path="res://enemy.gd" id="1_4gyqm"]
+[ext_resource type="Texture2D" uid="uid://d2eyp5bhidwx8" path="res://images/sandbox_result_i-removebg-preview 8.png" id="2_qi2p4"]
+[ext_resource type="Texture2D" uid="uid://durg1bjyu2fkb" path="res://images/IMG_5779.jpeg" id="3_qi2p4"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_4gyqm"]
+radius = 27.0
+height = 100.0
+
+[node name="enemy" type="CharacterBody2D" unique_id=694579920 node_paths=PackedStringArray("patrol_points")]
+script = ExtResource("1_4gyqm")
+patrol_points = [NodePath("Marker2D4"), NodePath("Marker2D2"), NodePath("Marker2D"), NodePath("Marker2D3"), NodePath("Marker2D5")]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1072573791]
+position = Vector2(679, 45)
+texture = ExtResource("2_qi2p4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=419703185]
+position = Vector2(785, 54)
+shape = SubResource("CapsuleShape2D_4gyqm")
+
+[node name="Marker2D4" type="Marker2D" parent="." unique_id=1938402902]
+position = Vector2(993, 450)
+
+[node name="Marker2D2" type="Marker2D" parent="." unique_id=965778365]
+position = Vector2(275, 451)
+
+[node name="Marker2D" type="Marker2D" parent="." unique_id=115222318]
+position = Vector2(315, 249)
+
+[node name="Marker2D3" type="Marker2D" parent="." unique_id=1815991905]
+position = Vector2(690, 541)
+
+[node name="Marker2D5" type="Marker2D" parent="." unique_id=1636181437]
+position = Vector2(677.50006, 541.25006)
+
+[node name="Img5779" type="Sprite2D" parent="." unique_id=641108314]
+show_behind_parent = true
+position = Vector2(577, 321.75)
+scale = Vector2(1.1995842, 1.0613748)
+texture = ExtResource("3_qi2p4")
